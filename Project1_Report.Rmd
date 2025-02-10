@@ -1,0 +1,211 @@
+---
+title: "SDS 322E: Project 1 Report"
+output: html_document
+---
+
+## Names and EIDs of Group Members
+
+
+
+## Load the Data
+
+```{r setup, include=FALSE}
+## Do not modify this code chunk
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+
+
+```{r, cache=TRUE, message=FALSE}
+## This chunk may take a long time to run. Set 'cache=TRUE' in the chunk options
+## to make it run faster in subsequent knittings.
+
+championships <- read_tsv("WCA_export_championships.tsv.bz2")
+competitions <- read_tsv("WCA_export_Competitions.tsv.bz2")
+continents <- read_tsv("WCA_export_Continents.tsv.bz2")
+countries <- read_tsv("WCA_export_Countries.tsv.bz2")
+eligible_country_iso2s_for_championship <- read_tsv("WCA_export_eligible_country_iso2s_for_championship.tsv.bz2")
+events <- read_tsv("WCA_export_Events.tsv.bz2")
+formats <- read_tsv("WCA_export_Formats.tsv.bz2")
+persons <- read_tsv("WCA_export_Persons.tsv.bz2")
+ranksaverage <- read_tsv("WCA_export_RanksAverage_333.tsv.bz2")
+rankssingle <- read_tsv("WCA_export_RanksSingle_333.tsv.bz2")
+results <- read_tsv("WCA_export_Results_333.tsv.bz2")
+roundtypes <- read_tsv("WCA_export_RoundTypes.tsv.bz2")
+scrambles <- read_tsv("WCA_export_Scrambles.tsv.bz2")
+```
+
+
+## Questions
+
+### Active Speed Cubers
+
+How many active (3x3x3) speedcubers are there registered with the WCA? For this question an *active speeedcuber* is defined as any person registered in the WCA who has competed in at least two competitions in the years 2022--2024. 
+
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+### World Records
+
+This question has two parts:
+
+1. Who holds the current world record single? 
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+On what date was this record set?
+
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+
+2. Who *previously* held the world record single? On what date was this previous record set?
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+### Regional Rankings
+
+This question has two parts:
+
+1. Amongst all speedcubers, who is the top ranked male speedcuber (for best single solve) in Australia?
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+2. Amongst all speedcubers, who is the top ranked female speedcuber (for best single solve time) in Europe?
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+
+### Time Until Sub-5
+
+Having a time below 5 seconds is considered an elite achievement and most speedcubers have to complete a large number of solves before they can obtain a sub-5 second solve. 
+
+**NOTE**: Each round of a competition has 5 solves that should be considered separately when counting the number of solves.
+
+
+1. For the current top 10 speedcubers in the world (as recorded in the RanksSingle table), on average, how many solves did they have to do before achieving a sub-5 second solve?
+
+
+```{r}
+## Add your code here
+
+```
+
+**Write your answer here.**
+
+
+
+2. For **one** of the top 10 speedcubers make a plot of their solve times vs. the date of the solve, with date on the x-axis and solve time on the y-axis. 
+
+
+```{r}
+## Add your code here
+
+```
+
+
+**Write your answer here.**
+
+
+### Up-and-Coming Speed Cubers
+
+Which speed cubers **not** in the top 10,000 (worldwide for single best time) should we keep an eye on for the near future? 
+
+The idea here is to identify "up-and-coming" speedcubers who are not yet achieving elite times. Come up with a list of **five** speedcubers (provide their names and WCA IDs) that you have identified as "up-and-coming". There is no one way to answer this question and the goal is to provide an analysis of the data that justifies the selection of your five names.
+
+```{r}
+## Add your code here
+
+
+```
+
+**Write your answer here.**
+
+
+
+### Country Rivalries
+
+France and Australia are both countries with strong speedcubers in the WCA.
+
+Which country has the faster group of speedcubers on average? 
+
+To answer this question, characterize each person using their best *average* score according to their listing in the `ranksaverage` table. In the `persons` table the `countryId` indicates each person's country affiliation. 
+
+Before attempting to answer the question, state what you expect the answer to be below.
+
+**Write your expectation here.**
+
+
+
+```{r}
+## Add your code here
+
+```
+
+What do you conclude about speedcubers in France vs. Australia?
+
+**Write you answer here.**
+
+
+### Alternative Explanations
+
+Develop an alternative explanation/hypothesis regarding speedcubers from France and Australia that is 
+
+1. Consistent with the results you produced in the previous question; but
+
+2. Provides a different interpretation or explanation for what is going on. 
+
+If the results from the previous question were unexpected, make use of systems thinking to develop an alternative hypothesis. If the results were consistent with your expectations, then use skeptical thinking. In either case, you should present an analysis that shows evidence for or against this alternative explanation relative to the conclusion that you made in the previous question.
+
+**State your alternative explanation here.**
+
+```{r}
+## Add your code here
+
+```
+
+**Summarize the results of your alternative analysis here.**
+
+
+
+
+
+## Discussion
+
