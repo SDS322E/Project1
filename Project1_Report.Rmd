@@ -160,13 +160,13 @@ The idea here is to identify "up-and-coming" speedcubers who are not yet achievi
 
 
 
-### Country Rivalries
+### Region Rivalries
 
-France and Australia are both countries with strong speedcubers in the WCA.
+Europe and North America are both regions with strong speedcubers in the WCA. 
 
-Which country has the faster group of speedcubers on average? 
+Which region has the faster group of speedcubers on average? 
 
-To answer this question, characterize each person using their best *average* score according to their listing in the `ranksaverage` table. In the `persons` table the `countryId` indicates each person's country affiliation. 
+To answer this question, characterize each person using their best *average* score according to their listing in the `ranksaverage` table. In the `persons` table the `countryId` indicates each person's country affiliation. The `countries` table lists the region that each country is in via the `continentId` column (Europe is "_Europe" and North America is "_North America").
 
 Before attempting to answer the question, state what you expect the answer to be below.
 
@@ -179,14 +179,14 @@ Before attempting to answer the question, state what you expect the answer to be
 
 ```
 
-What do you conclude about speedcubers in France vs. Australia?
+What do you conclude about speedcubers in Europe vs. North America?
 
 **Write you answer here.**
 
 
 ### Alternative Explanations
 
-Develop an alternative explanation/hypothesis regarding speedcubers from France and Australia that is 
+Develop an alternative explanation/hypothesis regarding speedcubers from Europe and North America that is 
 
 1. Consistent with the results you produced in the previous question; but
 
