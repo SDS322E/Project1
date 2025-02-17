@@ -18,7 +18,7 @@ library(tidyverse)
 
 
 
-```{r, cache=TRUE, message=FALSE}
+```{r, cache=FALSE, message=FALSE}
 ## This chunk may take a long time to run. Set 'cache=TRUE' in the chunk options
 ## to make it run faster in subsequent knittings.
 
