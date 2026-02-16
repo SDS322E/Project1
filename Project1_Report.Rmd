@@ -120,7 +120,7 @@ Having a time below 5 seconds is considered an elite achievement and most speedc
 **NOTE**: Each round of a competition has 5 solves that should be considered separately when counting the number of solves.
 
 
-1. For the current top 10 speedcubers in the world (as recorded in the RanksSingle table), on average, how many solves did they have to do before achieving a sub-5 second solve?
+1. For the current top 10 speedcubers in the world (as recorded in the RanksSingle table), on average, how many completed solves did they have to do before achieving a sub-5 second solve?
 
 
 ```{r}
